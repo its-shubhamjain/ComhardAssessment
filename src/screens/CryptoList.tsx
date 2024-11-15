@@ -91,6 +91,7 @@ const CryptoList: React.FC<Props> = ({ navigation }) => {
     <View style={styles.container}>
       <TextInput
         style={styles.searchInput}
+        placeholderTextColor={'black'}
         placeholder="Search Cryptocurrency"
         value={searchQuery}
         onChangeText={setSearchQuery}
@@ -102,6 +103,7 @@ const CryptoList: React.FC<Props> = ({ navigation }) => {
           selectedValue={sortOption}
           onValueChange={(value) => setSortOption(value)}
           style={styles.picker}
+          dropdownIconColor="black"
         >
           <Picker.Item label="Name" value="name" />
           <Picker.Item label="Current Price" value="price" />
@@ -131,7 +133,8 @@ const styles = StyleSheet.create({
     borderColor: '#ddd', 
     borderWidth: 1, 
     borderRadius: 8, 
-    marginBottom: 10 
+    marginBottom: 10,
+    color:'black',
   },
   sortContainer: {
     flexDirection: 'row', 
@@ -141,11 +144,13 @@ const styles = StyleSheet.create({
   },
   sortLabel: { 
     fontSize: 16, 
-    alignSelf:'center'
+    alignSelf:'center',
 
   },
   picker: { 
-    flex: 0.5,     
+    flex: 0.5,
+    color:'black',
+    alignItems:'center'
   },
   item: { 
     padding: 15, 
