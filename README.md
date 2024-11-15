@@ -1,8 +1,36 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Crypto Tracker App
 
-# Getting Started
+A React Native application to track cryptocurrency prices, market cap, and other statistics. The app features dynamic number formatting for precise data representation and allows users to view detailed metrics for selected cryptocurrencies.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
+
+- **Home Screen**: Displays a list of cryptocurrencies with key details.
+- **Crypto Detail Screen**: Shows detailed information for a selected cryptocurrency:
+  - Current price
+  - Market capitalization
+  - 24-hour price changes
+  - All-time high and date
+  - 24-hour high and low prices
+  - Last updated timestamp
+- **Dynamic Number Formatting**: Numbers less than 1 are shown with six decimal places.
+- **Error Handling**: Retry functionality in case of API errors.
+- **Responsive UI**: Built with `FlatList` for efficient rendering.
+
+---
+
+## Installation
+
+### Prerequisites
+
+- **Node.js** (v16 or later)
+- **npm** or **yarn**
+- React Native CLI or Expo CLI installed
+
+### Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/crypto-tracker.git
 
 ## Step 1: Start the Metro Server
 
